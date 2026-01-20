@@ -1,6 +1,6 @@
 -- 'memebers' table 
 CREATE TABLE members (
-  id INTEGER PRIMARY KEY,
+  member_id INTEGER PRIMARY KEY,
   member_name VARCHAR(200) NOT NULL,
   email VARCHAR(200) UNIQUE NOT NULL,
   join_date DATE NOT NULL,
