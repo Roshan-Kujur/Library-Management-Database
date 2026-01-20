@@ -29,3 +29,9 @@ JOIN book_borrow_records br ON m.id = br.member_id
 GROUP BY m.member_name
 HAVING COUNT(br.record_seq) >= 3;
 
+-- This query will fetch data of all the members who have joined after some particular date and have currently borrowed books
+SELECT m.member_name, m.email, m.join_date, br.issue_date, b.book_id, b.title AS book
+FROM members m 
+JOIN book_borrow_records br ON m.member_id = br.member_id 
+JOIN books b ON br.book_id = b.book_id 
+WHERE m.join_date > 'yyyy-mm-dd';
