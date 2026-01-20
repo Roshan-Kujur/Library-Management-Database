@@ -10,7 +10,6 @@ I am creating this to showcase understanding of database schema design, relation
 3. Authors
 4. Category(of Books)
 5. Borrow_records
-6. Fine_Imposed(if any)
 
 # It's features are -
 1.Primary and foreign key constraints
