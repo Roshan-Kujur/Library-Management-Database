@@ -12,7 +12,7 @@ CREATE TABLE books (
     title VARCHAR(200) NOT NULL,
     author_id INTEGER,
     published_year INTEGER,
-    available_copies INTEGER,
+    available_copies INTEGER NOT NULL,
     FOREIGN KEY (author_id) REFERENCES authors(author_id)
 );
 
